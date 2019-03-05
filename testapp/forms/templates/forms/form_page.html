@@ -4,8 +4,10 @@
   <form method="POST">
     {% csrf_token %}
 
-    {{ form.as_p }}
+    <div class="nhsuk-form-group">
+      {{ form.as_p }}
+    </div>
 
-    <input type="submit"/>
+    <input class="nhsuk-button" type="submit" />
   </form>
 {% endblock %}

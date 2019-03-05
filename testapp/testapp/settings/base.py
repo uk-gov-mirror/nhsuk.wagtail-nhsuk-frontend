@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
     'wagtailnhsukfrontend',
     'wagtailnhsukfrontend.settings',
+    'wagtailnhsukfrontend.forms',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -87,6 +88,8 @@ TEMPLATES = [
         },
     },
 ]
+
+FORM_RENDERER = 'wagtailnhsukfrontend.forms.renderers.NHSUKFrontendRenderer'
 
 WSGI_APPLICATION = 'testapp.wsgi.application'
 
