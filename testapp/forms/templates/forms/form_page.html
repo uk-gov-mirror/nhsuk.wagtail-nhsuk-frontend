@@ -1,12 +1,11 @@
 {% extends "base.html" %}
+{% load nhsukfrontendforms_tags %}
 
 {% block content %}
-  <form method="POST">
+  <form method="POST" novalidate>
     {% csrf_token %}
 
-    <div class="nhsuk-form-group">
-      {{ form.as_p }}
-    </div>
+    {% nhsuk_form form %}
 
     <input class="nhsuk-button" type="submit" />
   </form>
