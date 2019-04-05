@@ -3,19 +3,26 @@
 {{ form.non_field_errors }}
 
 {% for field in form %}
-  <div class="nhsuk-form-group">
+  <div class="nhsuk-form-group{% if field.errors %} nhsuk-form-group--error{% endif %}">
     <label class="nhsuk-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
     {% if field.help_text %}
       <span class="nhsuk-hint">
         {{ field.help_text|safe }}
       </span>
     {% endif %}
+
     {% for error in field.errors %}
       <span class="nhsuk-error-message">
         {{ error }}
       </span>
     {% endfor %}
 
-    {{ field }}
+    {% if field.errors %}
+      <div class="wagtail-nhsuk-form-error">
+        {{ field }}
+      </div>
+    {% else %}
+      {{ field }}
+    {% endif %}
   </div>
 {% endfor %}
