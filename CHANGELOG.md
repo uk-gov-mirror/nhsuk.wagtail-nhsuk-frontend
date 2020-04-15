@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.5.0
+
+- Add the [organisational header component](https://service-manual.nhs.uk/design-system/components/header#organisational-header)
+
 ## v0.4.2 
 
 - Use the latest version of the NHS.UK frontend library ([v3.0.4](https://github.com/nhsuk/nhsuk-frontend/blob/master/CHANGELOG.md#304---24-march-2020))
