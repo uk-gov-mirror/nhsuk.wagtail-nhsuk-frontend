@@ -1,7 +1,7 @@
 {% load wagtailimages_tags %}
 
 <div class="nhsuk-header__logo">
-  <a class="nhsuk-header__link{% if service_name %} nhsuk-header__link--service{% endif %}" href="{{ logo_href|default:"/" }}" aria-label="{% if organisation_name %}{{ organisation_name }}{% if organisation_split_name %} {{ organisation_split_name }}{% endif %} homepage{% else %}{{ logo_aria|default:"NHS homepage" }}{% endif %}">
+  <a class="nhsuk-header__link{% if service_name and not organisation_name %} nhsuk-header__link--service{% endif %}" href="{{ logo_href|default:"/" }}" aria-label="{% if organisation_name %}{{ organisation_name }}{% if organisation_split_name %} {{ organisation_split_name }}{% endif %} homepage{% else %}{{ logo_aria|default:"NHS homepage" }}{% endif %}">
     {% if logo_custom %}
     {% image logo_custom max-240x560 alt="" %}
     {% else %}
