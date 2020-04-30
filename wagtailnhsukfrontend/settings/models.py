@@ -52,6 +52,7 @@ class HeaderSettings(ClusterableModel, BaseSetting):
 
     organisational = models.BooleanField(default=False)
     organisation_name = models.CharField(max_length=255, blank=True)
+    organisation_split_name = models.CharField(max_length=255, blank=True)
     organisation_descriptor = models.CharField(max_length=255, blank=True)
     organisation_white = models.BooleanField(default=False)
 
@@ -71,6 +72,7 @@ class HeaderSettings(ClusterableModel, BaseSetting):
         MultiFieldPanel([
             FieldPanel('organisational'),
             FieldPanel('organisation_name'),
+            FieldPanel('organisation_split_name'),
             FieldPanel('organisation_descriptor'),
             FieldPanel('organisation_white'),
         ], heading="Organisational header"),

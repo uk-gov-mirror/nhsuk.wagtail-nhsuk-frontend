@@ -18,6 +18,7 @@ def header(context, **kwargs):
         'transactional': header.transactional,
         'organisational': header.organisational,
         'organisation_name': header.organisation_name,
+        'organisation_split_name': header.organisation_split_name,
         'organisation_descriptor': header.organisation_descriptor,
         'organisation_white': header.organisation_white,
         'logo_href': header.logo_link.relative_url(site) if header.logo_link else '',
