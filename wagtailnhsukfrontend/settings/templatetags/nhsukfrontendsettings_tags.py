@@ -16,7 +16,6 @@ def header(context, **kwargs):
         'service_href': header.service_link.relative_url(site) if header.service_link else '',
         'service_long_name': header.service_long_name,
         'transactional': header.transactional,
-        'organisational': header.organisational,
         'organisation_name': header.organisation_name,
         'organisation_split_name': header.organisation_split_name,
         'organisation_descriptor': header.organisation_descriptor,

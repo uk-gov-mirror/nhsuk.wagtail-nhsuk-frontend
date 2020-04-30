@@ -50,7 +50,6 @@ class HeaderSettings(ClusterableModel, BaseSetting):
 
     show_search = models.BooleanField(default=False)
 
-    organisational = models.BooleanField(default=False)
     organisation_name = models.CharField(max_length=255, blank=True)
     organisation_split_name = models.CharField(max_length=255, blank=True)
     organisation_descriptor = models.CharField(max_length=255, blank=True)
@@ -70,7 +69,6 @@ class HeaderSettings(ClusterableModel, BaseSetting):
             FieldPanel('transactional'),
         ], heading="Service header"),
         MultiFieldPanel([
-            FieldPanel('organisational'),
             FieldPanel('organisation_name'),
             FieldPanel('organisation_split_name'),
             FieldPanel('organisation_descriptor'),
