@@ -8,10 +8,6 @@ INSTALL_REQUIRES = [
     'Wagtail>=2.0',
 ]
 
-TESTING_REQUIRES = [
-    'beautifulsoup4==4.7.1'
-]
-
 
 class CompileCSSCommand(build):
     """Combine CSS from the frontend library with our wagtail-specific fixes"""
@@ -19,7 +15,7 @@ class CompileCSSCommand(build):
     def run(self):
         filepath_base = 'wagtailnhsukfrontend/static/wagtailnhsukfrontend/css/'
         filenames = [
-            'nhsuk-3.0.4.min.css',
+            'nhsuk-5.0.0.min.css',
             'fixes.css',
         ]
 
@@ -35,7 +31,7 @@ setup(
         'build': CompileCSSCommand,
     },
     name="wagtail-nhsuk-frontend",
-    version="0.5.0",
+    version="0.7.0",
     description="NHSUK Frontend Styles for Wagtail",
     author="Mike Monteith",
     author_email="<mike.monteith@nhs.net>",
@@ -45,5 +41,4 @@ setup(
     install_requires=INSTALL_REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    extras_require={'testing': TESTING_REQUIRES},
 )

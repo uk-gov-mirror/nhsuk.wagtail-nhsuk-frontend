@@ -1,10 +1,29 @@
 # CHANGELOG
+## v0.7.0
+
+- Use the latest version of the NHS.UK frontend library ([v5.0.0](https://github.com/nhsuk/nhsuk-frontend/blob/master/CHANGELOG.md#500---26-march-2021))
+## v0.6.0
+
+- Use the latest version of the NHS.UK frontend library ([v4.1.0](https://github.com/nhsuk/nhsuk-frontend/blob/master/CHANGELOG.md#410---21-january-2021))
+- Add internal page link option to ActionLink and Card blocks
 
 ## v0.5.0
 
-- Add the [organisational header component](https://service-manual.nhs.uk/design-system/components/header#organisational-header)
+- Use the latest version of the NHS.UK frontend library ([v4.0.0](https://github.com/nhsuk/nhsuk-frontend/blob/master/CHANGELOG.md#400---26-october-2020))
+- Add Card blocks
+- Add deprecation notice to Panel and Promo blocks
+- Add visually_hidden_prefix to warning callout blocks to enable hidden text for screenreaders
+- Rename the label for the Don't list in the admin panel
 
-## v0.4.2 
+## v0.4.4
+
+- Allow h5 and h6 heading level inside all blocks that contain headings.
+
+## v0.4.3
+
+- Updated the do and don't panel to allow custom labels
+
+## v0.4.2
 
 - Use the latest version of the NHS.UK frontend library ([v3.0.4](https://github.com/nhsuk/nhsuk-frontend/blob/master/CHANGELOG.md#304---24-march-2020))
 

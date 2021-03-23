@@ -21,7 +21,6 @@ By default, the care card block can contain the following sub-blocks:
 * [DetailsBlock](./details.md)
 * [InsetTextBlock](./inset_text.md)
 * [ImageBlock](./image.md)
-* [GreyPanelBlock](./grey_panel.md)
 * [WarningCalloutBlock](./warning_callout.md)
 * [SummaryListBlock](./summary_list.md)
 
@@ -48,5 +47,5 @@ class MyPage(Page):
 
 ## Reference
 
-[Service Manual](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards)  
-[Frontend Library](https://github.com/nhsuk/nhsuk-frontend/tree/master/packages/components/care-card)
+* [Service Manual](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards)
+* [Frontend Library](https://github.com/nhsuk/nhsuk-frontend/tree/master/packages/components/care-card)
